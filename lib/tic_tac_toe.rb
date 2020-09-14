@@ -43,7 +43,7 @@ end
 def play(board)
   turn(board) until over?(board)
    if won?(board)
-     puts "Congratulations #{winner"
+     puts "Congratulations #{winner(board)}"
 end
 
 
