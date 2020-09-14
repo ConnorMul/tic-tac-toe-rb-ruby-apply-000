@@ -87,3 +87,7 @@ def winner(board)
     board[winning_combo.first]
   end
 end
+
+def turn_count(board)
+  board.count { |token| token == 'X' || token == 'O' }
+end
