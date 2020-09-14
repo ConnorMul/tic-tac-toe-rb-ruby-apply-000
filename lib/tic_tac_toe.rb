@@ -31,12 +31,8 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index)
     display_board(board)
-  elsif position_taken?(board, location)
+  else
     turn(board)
-  elsif won?(board)
-   puts "Congratulations #{current_player}"
-   elsif draw?(board)
-   puts "Cat's Game!"
   end
 end
 
